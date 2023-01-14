@@ -1,0 +1,47 @@
+#race {
+	text-align: center;
+	background-color: #242021;
+}
+
+h1, h2, h3 {
+	color: 	#a2a2a2;
+}
+
+h3 { font-size: 25px; }
+
+h2 { font-size: 35px; }
+
+h1 { font-size: 50px; }
+
+/*use these below*/
+/*car1 color*/
+/*color: #ffebf7;*/
+
+/*car2 color*/
+/*color: #ba0000;*/
+
+.banner {
+    margin-top: 26px;
+    background-image: url("../challenges/img/raceTrack.jpg");
+	background-size: contain;
+	background-position: center center;
+ }
+.car1 img{
+	width: 150px;
+	height: 150px;
+	margin-left: -90%;
+}
+.car2 img{
+	width: 150px;
+	height: 150px;
+	margin-left: -90%;
+}
+
+.dimmed {
+	filter: brightness(0.5);
+	pointer-events: none;
+}
+
+
+
+

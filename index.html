@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Car racing game</title>
+	<meta name="keywords" content="html,css,lekcii">
+	<meta name="description" content="ova e strana za ucenje">
+	<meta name="author" content="Kristijan Bobevski">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- Latest compiled and minified BOOTSTRAP CSS -->
+	<!-- Latest compiled and minified Bootstrap 5.3.1 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+	<!-- Latest Font-Awesome CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
+	<!-- Local CSS -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<!-- Font-awesome 4.7 cdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="race">
+	<!-- write your code here -->
+	<div class="container">
+		<h1 class="text-mute fw-bold">Car racing game</h1>
+		<div class="row d-flex justify-content-center">
+			<div class="col-6">
+				<button id="start-button" type="button" class="btn btn-outline-warning text-white">Race!</button>
+			</div>
+			<div class="col-6">
+				<button id="reset-button" type="button" class="btn btn-outline-danger text-white">Start Over</button>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row banner ">
+			<div id="racetrack"></div>
+			<div class="col-12">
+				<div id="car1" class="car1">
+					<img src="./img/car1.gif" alt="">
+				</div>
+			</div>
+			<div class="col-12 text-white fw-bold d-flex justify-content-center align-items-center">
+				<div id="countdown"></div>
+				<div class="finish-flag" id="finish-flag" style="display: none;">
+					<img src="./img/finish.gif" alt="">
+				</div>
+			</div>
+			<div class="col-12">
+				<div id="car2" class="car2">
+					<img src="./img/car2.gif" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6 text-center">
+				<h1 class="fw-bold mb-1 py-3">Results</h1>
+				<div class="d-flex justify-content-between">
+					<h3 class="text-white">Car1:</h3>
+					<h3 class="text-danger">Car2:</h3>
+				</div>
+				<div id="results"></div>
+			</div>
+			<div class="col-6 text-center">
+				<h3 class="fw-bold mb-1 py-3">Results from previus game</h3>
+				<div id="results-table"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- jQuery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+	<script src="app.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
